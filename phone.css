@@ -1,0 +1,50 @@
+/* body{
+    background-color: red;
+} */
+/* Navigation Section */
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 5px;
+    padding-bottom: 8px;
+}
+/* Home Section */
+
+#home{
+    height: 250px;
+}
+#home::before{
+    height: 400px;
+}
+/* #home p{
+
+} */
+/* bookmarks Section */
+#bookmarks{
+    flex-direction:column;
+
+}
+/* #section .box{
+    box-sizing: border-box;
+} */
+/* .b2{  
+     margin: 15px 8px; 
+    width: auto;
+} */
+    
+/* Favourites Section */
+
+#favourites{
+flex-wrap: wrap;
+}
+
+/* Contact You Section */
+/* Footer Section  */
+/* Utility Classes */
+.h-primary{
+    font-size: 2rem;
+   
+}

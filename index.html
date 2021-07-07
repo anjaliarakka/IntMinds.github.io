@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IntMinds | Best Self Help Website </title>
+    <!-- <link rel="stylesheet" media="screen and (max-width:1100px)" href="./phone.css"> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=RocknRoll+One&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 10px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+/* Navigation Bar : logo & img */
+#logo{
+    margin: 5px 15px;
+} 
+
+#logo img{
+    height: 40px;
+    margin: 0px 8px;
+}
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color:beige;  */
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color:beige;
+    border-radius: 13px;
+    display: block;
+    padding: 3px 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color:beige;
+    color:darkviolet;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    padding: 8px 17px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url('img/notes.jpg')no-repeat center center/cover;
+     height: 100%; 
+     width: 100%;
+     z-index: -1;
+     opacity: 1;
+    }
+    
+    
+    /* Utility Classes */
+    p{
+        font-size: 1.2rem;
+        color: yellow;
+        padding: 12px;
+    }
+    .center{
+        text-align: center;
+        justify-content: center;
+    }
+.h-primary{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 15px;
+}
+.h-sec{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 12px;
+}
+.btn{
+    background-color: tomato;
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    padding: 7px 18px;
+    font-weight: bolder;
+    font-size: 1em;
+    cursor: pointer;
+}
+ h2{
+    color: black;
+    font-size: 1.8rem;
+    font-weight:900;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 25px;
+} 
+/* .bg{
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    
+} */
+/* Bookmarks Section */
+     #bookmarks::before{
+    background-color:salmon;
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+
+} 
+
+#bookmarks{
+    /* margin: 30px; */
+    display: flex;
+    /* padding: 6px 10px; */
+}
+#bookmarks .box{
+    border: 2px dotted crimson;
+    border-radius: 20px;
+    background-color: #0d456c8c;
+    margin: 5px 25px;
+    margin-bottom: 15px;
+    padding: 2px 20px;
+}
+#bookmarks .box img{
+    display: block;
+    margin: 15px auto;
+    height: 160px;
+    width: 241px;
+    /* text-shadow: indianred; */
+}
+/* Favourites Section  */
+#fav::before{
+    content: "";
+    position: absolute;
+    background: url("./img/seen.jpg")no-repeat center center/cover;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#fav{
+/* height: 350px; */
+position: relative;
+}
+#favourites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items{
+margin: 40px;
+border: 3px solid darkslategray;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    background: url("./img/contact\ us.png")no-repeat center center/cover;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#contact-box form{
+    width: 40%;
+    padding: 20px;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#contact-box input, textarea{
+   border: 1px solid white;
+  border-radius: 5px; 
+  width: 100%;
+  padding: 0.5em;
+  }
+  /* Footer  */
+  footer{
+      background: black;
+      color: floralwhite;
+      padding: auto;
+  }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./img/logo.jpeg" alt="IntMinds.com">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section">Bookmarks</a></li>
+            <li><a href="#fav">Favorites</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <!-- <div class="search">
+            <input type="text" id="search" placeholder="Content">
+            </div> -->
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to IntMinds</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo aperiam dolorum dolores repudiandae dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos minima repellat quam, rem mollitia?</p>
+        button,<button class="btn"> Explore Now </button>
+    </section>
+
+    <section id="section">
+        <h2 class="center" style="color: aliceblue;">Your Bookmarks</h2>
+        <div id="bookmarks">
+            <div class="box b1">
+                <img src="./img/download3.jpeg" alt="">
+    <h3 class="h-sec, center"> Fresh Start</h3>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto, soluta harum aspernatur at eligendi dolorum quasi delectus quos porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio nesciunt aspernatur commodi aliquam error alias vel, nihil iure minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae illo assumenda labore? Ipsa quas velit est nihil nulla similique molestiae voluptatum ad, repudiandae dolores esse, et, magnam alias cum cupiditate!</p>
+</div>
+<div class="box b2">
+    <img src="./img/download4.jpeg" alt="">
+    <h3 class="h-sec, center"> Motivation</h3>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto, soluta harum aspernatur at eligendi dolorum quasi delectus quos porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio nesciunt aspernatur commodi aliquam error alias vel, nihil iure minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime aperiam dicta nemo fugiat mollitia perspiciatis ipsam beatae tempora itaque, aut laborum veniam temporibus magnam distinctio optio. Neque, recusandae numquam!</p>
+</div>
+<div class="box b3">
+    <img src="./img/download5.jpeg" alt="">
+    <h3 class="h-sec, center"> Fitness</h3>
+    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto, soluta harum aspernatur at eligendi dolorum quasi delectus quos porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio nesciunt aspernatur commodi aliquam error alias vel, nihil iure minus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quia ullam minus odio quaerat veritatis. Vel debitis, numquam quia nostrum repudiandae, consequatur iste sit unde fuga, voluptas repellendus commodi asperiores?</p>
+</div>
+</div>
+    </section>
+    <section id="fav">
+        <h2 class="center">Your Favourites</h2>
+        <div id="favourites">
+            <div class="items">
+                <img src="./img/books1.jpeg" alt="">
+            </div>
+
+            <div class="items">
+                <img src="./img/books2.jpeg" alt="">
+            </div>
+
+            <div class="items">
+                <img src="./img/book3.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- Contact Section  -->
+    <section id='contact'>
+        <h2 class="center"> Contact Us </h2>
+        <div id="contact-box">
+            <form action="">
+                <div class="details">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                   </div>
+                <div class="details">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email">
+                   </div>
+                <div class="details">
+                    <label for="number">Phone</label>
+                    <input type="phone" id="number" placeholder="Enter Your Number">
+                   </div>
+                <div class="details">
+                    <label for="message">Message</label>
+                    <div>
+                        <textarea id="message" cols="30" rows="10">
+                        </textarea>
+                    </div>
+                   </div>
+                   
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; IntMinds.com. All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

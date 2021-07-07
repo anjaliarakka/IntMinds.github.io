@@ -1,0 +1,226 @@
+/* CSS reset  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 10px;
+}
+
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+/* Navigation Bar : logo & img */
+#logo{
+    margin: 5px 15px;
+} 
+
+#logo img{
+    height: 40px;
+    margin: 0px 8px;
+}
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    /* color:beige;  */
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color:beige;
+    border-radius: 13px;
+    display: block;
+    padding: 3px 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color:beige;
+    color:darkviolet;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    padding: 8px 17px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url('/img/notes.jpg')no-repeat center center/cover;
+     height: 100%; 
+     width: 100%;
+     z-index: -1;
+     opacity: 1;
+    }
+    
+    
+    /* Utility Classes */
+    p{
+        font-size: 1.2rem;
+        color: yellow;
+        padding: 12px;
+    }
+    .center{
+        text-align: center;
+        justify-content: center;
+    }
+.h-primary{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 15px;
+}
+.h-sec{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 12px;
+}
+.btn{
+    background-color: tomato;
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    padding: 7px 18px;
+    font-weight: bolder;
+    font-size: 1em;
+    cursor: pointer;
+}
+ h2{
+    color: black;
+    font-size: 1.8rem;
+    font-weight:900;
+    font-family: 'RocknRoll One', sans-serif;
+    padding: 25px;
+} 
+/* .bg{
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    
+} */
+/* Bookmarks Section */
+    /* #section::before{
+    background-color:salmon;
+    opacity: 1;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+
+} */ 
+
+#bookmarks{
+    /* margin: 30px; */
+    display: flex;
+    /* padding: 6px 10px; */
+}
+#bookmarks .box{
+    border: 2px dotted crimson;
+    border-radius: 20px;
+    background-color: #0d456c8c;
+    margin: 5px 25px;
+    margin-bottom: 15px;
+    padding: 2px 20px;
+}
+#bookmarks .box img{
+    display: block;
+    margin: 15px auto;
+    height: 160px;
+    width: 241px;
+    /* text-shadow: indianred; */
+}
+/* Favourites Section  */
+#fav::before{
+    content: "";
+    position: absolute;
+    background: url("img/seen.jpg")no-repeat center center/cover;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#fav{
+/* height: 350px; */
+position: relative;
+}
+#favourites{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items{
+margin: 40px;
+border: 3px solid darkslategray;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    background: url("img/contact\ us.png")no-repeat center center/cover;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#contact-box form{
+    width: 40%;
+    padding: 20px;
+}
+
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+#contact-box input, textarea{
+   border: 1px solid white;
+  border-radius: 5px; 
+  width: 100%;
+  padding: 0.5em;
+  }
+  /* Footer  */
+  footer{
+      background: black;
+      color: floralwhite;
+      padding: auto;
+  }
